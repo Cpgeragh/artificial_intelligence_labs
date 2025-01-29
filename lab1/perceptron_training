@@ -8,5 +8,7 @@ public class PerceptronLogic {
             {1.00f, 1.00f}
         };
 
+        // Define the expected truth values for logical AND operations
+        float[] expected = {0.00f, 0.00f, 0.00f, 1.00f};
     }
 }
