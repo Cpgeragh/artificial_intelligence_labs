@@ -1,0 +1,12 @@
+public class PerceptronLogic {
+    public static void main(String[] args) {
+        // Define the 2D array representing the permutations of two operands
+        float[][] data = {
+            {0.00f, 0.00f},
+            {1.00f, 0.00f},
+            {0.00f, 1.00f},
+            {1.00f, 1.00f}
+        };
+
+    }
+}
