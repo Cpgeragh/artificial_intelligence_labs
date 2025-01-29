@@ -10,5 +10,9 @@ public class PerceptronLogic {
 
         // Define the expected truth values for logical AND operations
         float[] expected = {0.00f, 0.00f, 0.00f, 1.00f};
+
+        // Instantiate a Rosenblatt perceptron with two input variables
+        Perceptron p = new Perceptron(2);
+        p.train(data, expected, 10000);
     }
 }
