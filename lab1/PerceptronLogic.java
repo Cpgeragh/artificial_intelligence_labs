@@ -13,6 +13,7 @@ public class PerceptronLogic {
         float[] expectedAnd = {0.00f, 0.00f, 0.00f, 1.00f};
         Perceptron perceptronAnd = new Perceptron(2);
         perceptronAnd.train(data, expectedAnd, 10000);
+
         for (int row = 0; row < data.length; row++) {
             int result = perceptronAnd.activate(data[row]);
             System.out.println("AND Result " + row + ": " + result);
@@ -23,6 +24,7 @@ public class PerceptronLogic {
         float[] expectedOr = {0.00f, 1.00f, 1.00f, 1.00f};
         Perceptron perceptronOr = new Perceptron(2);
         perceptronOr.train(data, expectedOr, 10000);
+        
         for (int row = 0; row < data.length; row++) {
             int result = perceptronOr.activate(data[row]);
             System.out.println("OR Result " + row + ": " + result);
